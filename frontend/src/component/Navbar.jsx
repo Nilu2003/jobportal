@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className='flex flex-row justify-around mt-3'>
       <div className='text-3xl font-bold'>Job-Hunt</div>
-      <ul className='hidden md:flex flex-row gap-4 font-semibold'>
+      <ul className='hidden md:flex flex-row gap-4 font-bold'>
         {role === "admin" ? (
           <>
             <li><Link to="/admin/dashboard">Dashboard</Link></li>
@@ -35,7 +35,6 @@ const Navbar = () => {
           <>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/jobs">Jobs</Link></li>
-            <li><Link to="/about">About</Link></li>
           </>
         )}
       </ul>
@@ -64,17 +63,17 @@ const Navbar = () => {
               </div>
             )}
           </div> :
-          <div>
+          <div className='flex flex-row gap-2'>
             <Link
               to="/login"
-              className='border px-4 py-1 rounded-md font-semibold text-[15px]'
+              className='border px-2 py-1 rounded-md font-semibold text-[15px] '
             >
               LogIn
             </Link>
 
             <Link
               to="/signup"
-              className='border px-4 py-1 rounded-md bg-blue-600 text-white font-semibold text-[15px]'
+              className='border px-2 py-1 rounded-md bg-blue-600 text-white font-semibold text-[15px]'
             >
               SignUp
             </Link>
