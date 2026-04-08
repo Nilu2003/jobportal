@@ -7,7 +7,7 @@ const Hero = () => {
         <div className='text-2xl md:text-3xl lg:text-4xl text-center font-bold w-60 md:w-80 lg:w-100'>Search,apply & Get Your Dream Jobs</div>
         <div className='text-center w-80 md:w-100 lg:w-175'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptates molestiae! Eaque, similique? Cupiditate dignissimos, ab voluptate of.</div>
         <div className=''>
-          <input type="text" placeholder='Find your Dream jobs' className='bg-amber-50 shadow-2xl border-none' />
+          <input type="text" placeholder='Find your Dream jobs' className='bg-amber-50 shadow-2xl rounded-3xl outline-blue-500' />
           
         </div>
     </div>

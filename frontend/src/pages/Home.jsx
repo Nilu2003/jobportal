@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div className='flex flex-col justify-center items-center mt-10 md:mt-15 lg:mt-20 gap-3'>
 
-      {/* Header */}
+      
       <div className='bg-amber-50 shadow rounded-2xl w-34 md:w-38 lg:w-45 h-4 md:h-5 lg:h-7.5 text-red-400 text-center text-[8px] md:text-[12px] lg:text-[15px]'>
         No. 1 Job Hunt Website
       </div>
@@ -64,7 +64,7 @@ const Home = () => {
         placeholder="🔍 Find your Dream jobs"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className='bg-amber-50 shadow-2xl p-2 rounded mt-5 w-72 md:w-96'
+        className='bg-amber-50 shadow-2xl p-2 rounded-3xl mt-5 w-72 md:w-96 border border-blue-500 outline-none'
       />
 
       {/* Jobs Section */}
