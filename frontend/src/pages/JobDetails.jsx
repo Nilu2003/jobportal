@@ -50,7 +50,7 @@ const JobDetails = () => {
                     "Content-Type": "multipart/form-data"
                 },
             });
-            console.log("applied sucessfully", res);
+            // console.log("applied sucessfully", res);
             setShowModal(false);
              setResume(null);
 

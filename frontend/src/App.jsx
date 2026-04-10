@@ -19,7 +19,7 @@ function App() {
           dispatch(loginSuccess(res.data.data));
         }
       } catch (error) {
-        console.log("User not logged in"); 
+        // console.log("User not logged in"); 
         dispatch(logout());
       } finally {
         setLoading(false); // ✅ always stop loading
