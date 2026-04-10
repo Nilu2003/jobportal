@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import API from '../api/api'
 import { deleteJob } from '../features/jobs/jobSlice'
+
 const JobCard = ({ job }) => {
     const navigate = useNavigate()
     const { role } = useSelector((state) => state.auth)

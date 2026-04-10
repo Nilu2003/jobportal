@@ -72,15 +72,22 @@ const registerUser=asyncHandler(async(req,res) =>{
         email,
         phoneNumber,
         fullName,
-        role: role
-         
-        
+        role: role       
     })
+
+    const {accessToken,refreshToken}=generateAcessTokenAndRefreshToken(user)
+    const option={
+        httpOnly:true,
+        secure:true
+    }
 
      const users=  user.toObject()
      delete users.password
         
-    return res.status(201).json(
+    return res.status(201)
+    .cookie("acessToken",accessToken,option)
+    .cookie("refreshToken",refreshToken)
+    .json(
         new ApiResponse(201,users,"user created sucessfully")
     )
 
