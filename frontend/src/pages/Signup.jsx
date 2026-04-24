@@ -49,7 +49,7 @@ const Signup = () => {
 
       dispatch(loginSuccess(res.data.data))
 
-      navigate("/")
+      navigate("/login")
 
     } catch (error) {
       
